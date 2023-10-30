@@ -1,0 +1,177 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+body{
+    font-size: "Roboto","sans-serif";
+    
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link :focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+color: var(--green-color);
+
+}
+.navbar .search{
+border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+
+}
+.navbar .navbar-toggler{
+    border-color: white;
+    font-size: 25px;
+    color: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 56px);
+}
+
+.main-btn{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    padding:0.5rem 1rem ;
+}
+.main-btn:hover {
+    color: #ffc400;
+}
+.main-title::after{
+    content: " ";
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translate(-50%);
+}
+.feat .icons{
+    height: 200px;
+}
+.feat .icons svg{
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.feat .icons .number{
+    font-size: 12rem;
+    color:var(--section-color) ;
+
+}
+
+.feat .icons .icon{
+    color: var(--green-color);
+    font-size: 50px;
+}
+.feat h4{
+    color: var(--yellow-color);
+}
+.ourwork {
+    background-color: var(--section-color);
+}
+.ourwork .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+
+}
+.ourwork ul li{
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.ourwork ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.ourwork .box{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.ourwork .box::after{
+    content: "";
+left: 5px;
+top: 5px;
+    background-color: rgb(51 209 204 /76%);
+    position: absolute;
+    width:0%;
+    height: calc( 100% - 10px);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.ourwork .box:hover::after{
+    content: "application";
+    width: calc(100% - 10px);
+   
+}
+.discrept{
+    max-width: 600px;
+}
+.team-size{
+    max-width: 1200px;
+}
+.our_team{
+    background-color: var(--section-color);
+}
+.box h4{
+    background-color: var(--green-color);
+}
+.our_team h2{
+    color: var(--yellow-color);
+}
+.scrib{
+    background-color: var(--yellow-color);
+}
+.scrib .border{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.scrib .border::after{
+    outline: none;
+}
+.scrib .btn-sub{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.color{
+   color: var(--green-color);
+   
+}
+.color2{
+    color: var(--yellow-color);
+}
+.facebook{
+    background-color: rgb(24, 119, 242);
+}
+.twitter {
+    background-color: rgb(29, 161, 242);
+}
+.link{
+    background-color: rgb(0, 119, 181);
+}
+.youtube{
+    background-color: red;
+}
